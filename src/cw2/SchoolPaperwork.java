@@ -1,6 +1,6 @@
-package com.company;
+package cw2;
 
-public class Main {
+public class SchoolPaperwork {
 
     public static void main(String[] args) {
         System.out.println( paperWork(-5,5));

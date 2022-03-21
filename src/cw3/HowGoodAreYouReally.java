@@ -1,8 +1,8 @@
-package com.company;
+package cw3;
 
 import java.util.Arrays;
 
-public class Main {
+public class HowGoodAreYouReally {
 
     public static void main(String[] args) {
         System.out.println(betterThanAverage(new int[] {100, 90}, 11));
@@ -19,4 +19,6 @@ public class Main {
     static boolean betterThanAverage(final int[] classPoints, final int yourPoints) {
         return Arrays.stream(classPoints).average().orElse(0) < yourPoints;
     }
+
 }
+
