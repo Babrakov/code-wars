@@ -1,4 +1,4 @@
-package cw3;
+package cw03;
 
 import java.util.Arrays;
 

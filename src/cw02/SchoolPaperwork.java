@@ -1,4 +1,4 @@
-package cw2;
+package cw02;
 
 public class SchoolPaperwork {
 

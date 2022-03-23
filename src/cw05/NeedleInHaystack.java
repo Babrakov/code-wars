@@ -1,6 +1,4 @@
-package cw5;
-
-import java.util.Arrays;
+package cw05;
 
 public class NeedleInHaystack {
 

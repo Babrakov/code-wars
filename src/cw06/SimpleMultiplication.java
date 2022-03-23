@@ -1,4 +1,4 @@
-package cw6;
+package cw06;
 
 public class SimpleMultiplication {
 
