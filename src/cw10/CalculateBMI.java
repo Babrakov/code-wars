@@ -3,7 +3,7 @@ package cw10;
 public class CalculateBMI {
 
     public static void main(String[] args) {
-        System.out.println(bmi(80, 1.80));
+        System.out.println(bmi(78, 1.73));
     }
 
     public static String myBmi(double weight, double height) {
