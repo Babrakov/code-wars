@@ -1,4 +1,4 @@
-package cw08;
+package main.java.cw08;
 
 public class ConvertBooleanValuesToStrings {
 

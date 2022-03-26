@@ -1,4 +1,4 @@
-package cw04;
+package main.java.cw04;
 
 public class ConvertNumberToString {
 

@@ -1,4 +1,4 @@
-package cw13;
+package main.java.cw13;
 
 public class AnagramDetection {
     public static void main(String[] args) {

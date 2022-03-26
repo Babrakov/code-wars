@@ -1,4 +1,4 @@
-package cw02;
+package main.java.cw02;
 
 public class SchoolPaperwork {
 

@@ -1,4 +1,4 @@
-package cw10;
+package main.java.cw10;
 
 public class CalculateBMI {
 

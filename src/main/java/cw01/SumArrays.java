@@ -1,4 +1,4 @@
-package cw01;
+package main.java.cw01;
 
 public class SumArrays {
 

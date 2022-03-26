@@ -1,4 +1,4 @@
-package cw12;
+package main.java.cw12;
 
 public class TotalAmountOfPoints {
 
