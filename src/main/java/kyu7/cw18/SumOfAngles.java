@@ -1,4 +1,4 @@
-package main.java.cw18;
+package main.java.kyu7.cw18;
 
 public class SumOfAngles {
 

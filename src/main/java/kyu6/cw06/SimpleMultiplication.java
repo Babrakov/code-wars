@@ -1,4 +1,4 @@
-package main.java.cw06;
+package main.java.kyu6.cw06;
 
 public class SimpleMultiplication {
 

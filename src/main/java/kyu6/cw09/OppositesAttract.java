@@ -1,4 +1,4 @@
-package main.java.cw09;
+package main.java.kyu6.cw09;
 
 public class OppositesAttract {
 

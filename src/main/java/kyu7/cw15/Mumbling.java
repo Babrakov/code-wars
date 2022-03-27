@@ -1,4 +1,4 @@
-package main.java.cw15;
+package main.java.kyu7.cw15;
 
 public class Mumbling {
 

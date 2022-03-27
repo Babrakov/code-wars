@@ -1,4 +1,4 @@
-package main.java.cw07;
+package main.java.kyu6.cw07;
 
 import java.util.Arrays;
 

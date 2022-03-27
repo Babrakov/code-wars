@@ -1,4 +1,4 @@
-package main.java.cw05;
+package main.java.kyu6.cw05;
 
 public class NeedleInHaystack {
 

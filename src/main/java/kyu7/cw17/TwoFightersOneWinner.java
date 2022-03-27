@@ -1,4 +1,4 @@
-package main.java.cw17;
+package main.java.kyu7.cw17;
 
 public class TwoFightersOneWinner {
     public static void main(String[] args) {

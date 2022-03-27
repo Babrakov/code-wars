@@ -1,4 +1,4 @@
-package main.java.cw03;
+package main.java.kyu6.cw03;
 
 import java.util.Arrays;
 

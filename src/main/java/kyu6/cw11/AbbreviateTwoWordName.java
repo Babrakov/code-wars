@@ -1,4 +1,4 @@
-package main.java.cw11;
+package main.java.kyu6.cw11;
 
 public class AbbreviateTwoWordName {
 

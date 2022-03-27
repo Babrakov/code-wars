@@ -1,4 +1,4 @@
-package main.java.cw16;
+package main.java.kyu7.cw16;
 
 public class GetMiddleCharacter {
 
