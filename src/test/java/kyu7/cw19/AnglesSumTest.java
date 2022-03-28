@@ -1,6 +1,6 @@
 package test.java.kyu7.cw19;
 
-import main.java.kyu7.cw189.SumOfAngles;
+import main.java.kyu7.cw19.SumOfAngles;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

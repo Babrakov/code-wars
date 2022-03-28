@@ -1,4 +1,4 @@
-package main.java.kyu7.cw189;
+package main.java.kyu7.cw19;
 
 /*
 Find the total sum of internal angles (in degrees) in an n-sided simple polygon. N will be greater than 2.
