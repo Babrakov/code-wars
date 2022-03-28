@@ -1,4 +1,4 @@
-package main.java.kyu7.cw19;
+package main.java.kyu7.cw20;
 
 import java.util.*;
 import java.util.stream.Collectors;

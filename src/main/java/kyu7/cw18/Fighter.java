@@ -1,4 +1,4 @@
-package main.java.kyu7.cw17;
+package main.java.kyu7.cw18;
 
 public class Fighter {
     public String name;

@@ -1,6 +1,6 @@
-package test.java.kyu7.cw19;
+package test.java.kyu7.cw20;
 
-import main.java.kyu7.cw19.FormTheMinimum;
+import main.java.kyu7.cw20.FormTheMinimum;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
