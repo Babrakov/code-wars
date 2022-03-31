@@ -1,4 +1,4 @@
-package main.java.kyu6.cw12;
+package main.java.kyu8.cw12;
 
 public class TotalAmountOfPoints {
 

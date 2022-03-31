@@ -1,4 +1,4 @@
-package main.java.kyu6.cw02;
+package main.java.kyu8.cw02;
 
 public class SchoolPaperwork {
 
