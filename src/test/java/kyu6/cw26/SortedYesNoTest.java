@@ -1,6 +1,6 @@
-package test.java.kyu6;
+package test.java.kyu6.cw26;
 
-import main.java.kyu6.SortedYesNo;
+import main.java.kyu6.cw26.SortedYesNo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

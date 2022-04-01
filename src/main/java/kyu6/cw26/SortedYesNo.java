@@ -1,4 +1,4 @@
-package main.java.kyu6;
+package main.java.kyu6.cw26;
 
 import java.util.stream.IntStream;
 
