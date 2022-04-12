@@ -1,4 +1,4 @@
-package main.java.kyu6.cw37;
+package main.java.kyu6.kata12;
 
 import java.util.Arrays;
 import java.util.function.Predicate;

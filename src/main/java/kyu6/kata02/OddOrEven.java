@@ -1,4 +1,4 @@
-package main.java.kyu6.cw27;
+package main.java.kyu6.kata02;
 
 /*
 Task:

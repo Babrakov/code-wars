@@ -1,4 +1,4 @@
-package main.java.kyu8.cw09;
+package main.java.kyu8.kata09;
 
 public class OppositesAttract {
 

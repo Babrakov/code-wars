@@ -1,4 +1,4 @@
-package main.java.kyu8.cw03;
+package main.java.kyu8.kata03;
 
 import java.util.Arrays;
 

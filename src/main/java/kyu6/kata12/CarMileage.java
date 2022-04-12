@@ -1,4 +1,4 @@
-package main.java.kyu6.cw37;
+package main.java.kyu6.kata12;
 
 /*
 "7777...8?!??!", exclaimed Bob, "I missed it again! Argh!" Every time there's an interesting number coming up, he notices and then promptly forgets. Who doesn't like catching those one-off interesting mileage numbers?

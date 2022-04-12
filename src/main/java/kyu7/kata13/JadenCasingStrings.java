@@ -1,4 +1,4 @@
-package main.java.kyu7.cw25;
+package main.java.kyu7.kata13;
 
 public class JadenCasingStrings {
 

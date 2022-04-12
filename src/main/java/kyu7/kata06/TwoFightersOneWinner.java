@@ -1,4 +1,4 @@
-package main.java.kyu7.cw18;
+package main.java.kyu7.kata06;
 
 /*
 Create a function that returns the name of the winner in a fight between two fighters.

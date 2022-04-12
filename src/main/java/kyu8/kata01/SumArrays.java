@@ -1,4 +1,4 @@
-package main.java.kyu8.cw01;
+package main.java.kyu8.kata01;
 
 public class SumArrays {
 

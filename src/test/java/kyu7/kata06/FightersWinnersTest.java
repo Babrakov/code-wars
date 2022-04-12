@@ -1,7 +1,7 @@
-package test.java.kyu7.cw18;
+package test.java.kyu7.kata06;
 
-import main.java.kyu7.cw18.Fighter;
-import main.java.kyu7.cw18.TwoFightersOneWinner;
+import main.java.kyu7.kata06.Fighter;
+import main.java.kyu7.kata06.TwoFightersOneWinner;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

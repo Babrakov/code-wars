@@ -1,4 +1,4 @@
-package main.java.kyu7.cw24;
+package main.java.kyu7.kata12;
 
 public class MaximumLengthDifference {
 

@@ -1,4 +1,4 @@
-package main.java.kyu8.cw04;
+package main.java.kyu8.kata04;
 
 public class ConvertNumberToString {
 

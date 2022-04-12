@@ -1,6 +1,6 @@
-package test.java.kyu6.cw33;
+package test.java.kyu6.kata08;
 
-import main.java.kyu6.cw33.ValidBraces;
+import main.java.kyu6.kata08.ValidBraces;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

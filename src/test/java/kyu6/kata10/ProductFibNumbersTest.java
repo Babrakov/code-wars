@@ -1,6 +1,6 @@
-package test.java.kyu6.cw35;
+package test.java.kyu6.kata10;
 
-import main.java.kyu6.cw35.ProductFibNumbers;
+import main.java.kyu6.kata10.ProductFibNumbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

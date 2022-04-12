@@ -1,6 +1,6 @@
-package test.java.kyu7.cw21;
+package test.java.kyu7.kata09;
 
-import main.java.kyu7.cw21.Isograms;
+import main.java.kyu7.kata09.Isograms;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

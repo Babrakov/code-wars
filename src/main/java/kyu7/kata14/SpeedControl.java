@@ -1,4 +1,4 @@
-package main.java.kyu7.cw26;
+package main.java.kyu7.kata14;
 
 import java.util.stream.IntStream;
 

@@ -1,4 +1,4 @@
-package main.java.kyu7.cw22;
+package main.java.kyu7.kata10;
 
 public class Factorial {
 

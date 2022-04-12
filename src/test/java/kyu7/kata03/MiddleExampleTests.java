@@ -1,6 +1,6 @@
-package test.java.kyu7.cw15;
+package test.java.kyu7.kata03;
 
-import main.java.kyu7.cw15.Mumbling;
+import main.java.kyu7.kata03.Mumbling;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

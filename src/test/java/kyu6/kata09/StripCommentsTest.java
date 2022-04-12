@@ -1,6 +1,6 @@
-package test.java.kyu6.cw34;
+package test.java.kyu6.kata09;
 
-import main.java.kyu6.cw34.StripComments;
+import main.java.kyu6.kata09.StripComments;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

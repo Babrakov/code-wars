@@ -1,4 +1,4 @@
-package main.java.kyu7.cw14;
+package main.java.kyu7.kata02;
 
 public class VowelCount {
 

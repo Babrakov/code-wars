@@ -1,6 +1,6 @@
-package test.java.kyu7.cw17;
+package test.java.kyu7.kata05;
 
-import main.java.kyu7.cw17.SumOfNumbers;
+import main.java.kyu7.kata05.SumOfNumbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

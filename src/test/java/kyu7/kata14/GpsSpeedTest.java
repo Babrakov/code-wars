@@ -1,6 +1,6 @@
-package test.java.kyu7.cw26;
+package test.java.kyu7.kata14;
 
-import main.java.kyu7.cw26.SpeedControl;
+import main.java.kyu7.kata14.SpeedControl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package main.java.kyu6.cw32;
+package main.java.kyu6.kata07;
 
 import java.util.ArrayList;
 import java.util.List;

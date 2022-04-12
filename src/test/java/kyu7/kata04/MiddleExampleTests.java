@@ -1,6 +1,6 @@
-package test.java.kyu7.cw16;
+package test.java.kyu7.kata04;
 
-import main.java.kyu7.cw16.GetMiddleCharacter;
+import main.java.kyu7.kata04.GetMiddleCharacter;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

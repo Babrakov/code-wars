@@ -1,4 +1,4 @@
-package main.java.kyu8.cw06;
+package main.java.kyu8.kata06;
 
 public class SimpleMultiplication {
 

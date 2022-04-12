@@ -1,4 +1,4 @@
-package main.java.kyu6.cw31;
+package main.java.kyu6.kata06;
 
 /*
 Build Tower

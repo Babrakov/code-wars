@@ -1,4 +1,4 @@
-package main.java.kyu6.cw36;
+package main.java.kyu6.kata11;
 
 import java.util.List;
 import java.lang.Math;

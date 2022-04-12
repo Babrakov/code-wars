@@ -1,6 +1,6 @@
-package test.java.kyu6.cw30;
+package test.java.kyu6.kata05;
 
-import main.java.kyu6.cw30.BouncingBalls;
+import main.java.kyu6.kata05.BouncingBalls;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

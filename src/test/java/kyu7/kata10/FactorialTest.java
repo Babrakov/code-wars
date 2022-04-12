@@ -1,6 +1,6 @@
-package test.java.kyu7.cw22;
+package test.java.kyu7.kata10;
 
-import main.java.kyu7.cw22.Factorial;
+import main.java.kyu7.kata10.Factorial;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;

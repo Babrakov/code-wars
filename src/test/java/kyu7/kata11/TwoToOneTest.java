@@ -1,6 +1,6 @@
-package test.java.kyu7.cw23;
+package test.java.kyu7.kata11;
 
-import main.java.kyu7.cw23.TwoToOne;
+import main.java.kyu7.kata11.TwoToOne;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

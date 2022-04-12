@@ -1,4 +1,4 @@
-package main.java.kyu6.cw35;
+package main.java.kyu6.kata10;
 
 /*
 The Fibonacci numbers are the numbers in the following integer sequence (Fn):

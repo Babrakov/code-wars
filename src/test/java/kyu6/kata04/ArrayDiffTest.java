@@ -1,6 +1,6 @@
-package test.java.kyu6.cw29;
+package test.java.kyu6.kata04;
 
-import main.java.kyu6.cw29.ArrayDiff;
+import main.java.kyu6.kata04.ArrayDiff;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

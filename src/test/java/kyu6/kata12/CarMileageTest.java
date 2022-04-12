@@ -1,6 +1,6 @@
-package test.java.kyu6.cw37;
+package test.java.kyu6.kata12;
 
-import main.java.kyu6.cw37.CarMileage;
+import main.java.kyu6.kata12.CarMileage;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

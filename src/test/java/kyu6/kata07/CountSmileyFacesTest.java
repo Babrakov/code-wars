@@ -1,6 +1,6 @@
-package test.java.kyu6.cw32;
+package test.java.kyu6.kata07;
 
-import main.java.kyu6.cw32.CountSmileyFaces;
+import main.java.kyu6.kata07.CountSmileyFaces;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
-package test.java.kyu6.cw31;
+package test.java.kyu6.kata06;
 
-import main.java.kyu6.cw31.BuildTower;
+import main.java.kyu6.kata06.BuildTower;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

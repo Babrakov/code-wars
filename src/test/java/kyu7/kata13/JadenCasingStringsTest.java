@@ -1,6 +1,6 @@
-package test.java.kyu7.cw25;
+package test.java.kyu7.kata13;
 
-import main.java.kyu7.cw25.JadenCasingStrings;
+import main.java.kyu7.kata13.JadenCasingStrings;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package main.java.kyu7.cw17;
+package main.java.kyu7.kata05;
 
 public class SumOfNumbers {
 

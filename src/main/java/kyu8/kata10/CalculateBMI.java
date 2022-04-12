@@ -1,4 +1,4 @@
-package main.java.kyu8.cw10;
+package main.java.kyu8.kata10;
 
 public class CalculateBMI {
 

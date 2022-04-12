@@ -1,4 +1,4 @@
-package main.java.kyu6.cw28;
+package main.java.kyu6.kata03;
 
 /*
 Trolls are attacking your comment section!

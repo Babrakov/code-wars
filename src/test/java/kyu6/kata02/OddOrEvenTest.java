@@ -1,6 +1,6 @@
-package test.java.kyu6.cw27;
+package test.java.kyu6.kata02;
 
-import main.java.kyu6.cw27.OddOrEven;
+import main.java.kyu6.kata02.OddOrEven;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

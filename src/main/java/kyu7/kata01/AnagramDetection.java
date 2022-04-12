@@ -1,4 +1,4 @@
-package main.java.kyu7.cw13;
+package main.java.kyu7.kata01;
 
 public class AnagramDetection {
     public static void main(String[] args) {

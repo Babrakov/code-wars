@@ -1,6 +1,5 @@
-package main.java.kyu7.cw23;
+package main.java.kyu7.kata11;
 
-import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class TwoToOne {

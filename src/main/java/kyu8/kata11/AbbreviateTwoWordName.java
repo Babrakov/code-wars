@@ -1,4 +1,4 @@
-package main.java.kyu8.cw11;
+package main.java.kyu8.kata11;
 
 public class AbbreviateTwoWordName {
 

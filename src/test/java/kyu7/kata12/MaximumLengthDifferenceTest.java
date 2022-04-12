@@ -1,6 +1,6 @@
-package test.java.kyu7.cw24;
+package test.java.kyu7.kata12;
 
-import main.java.kyu7.cw24.MaximumLengthDifference;
+import main.java.kyu7.kata12.MaximumLengthDifference;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

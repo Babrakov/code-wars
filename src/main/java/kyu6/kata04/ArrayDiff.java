@@ -1,4 +1,4 @@
-package main.java.kyu6.cw29;
+package main.java.kyu6.kata04;
 
 /*
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.

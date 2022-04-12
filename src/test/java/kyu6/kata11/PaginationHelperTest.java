@@ -1,6 +1,6 @@
-package test.java.kyu6.cw36;
+package test.java.kyu6.kata11;
 
-import main.java.kyu6.cw36.PaginationHelper;
+import main.java.kyu6.kata11.PaginationHelper;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

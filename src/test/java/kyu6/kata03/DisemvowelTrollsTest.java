@@ -1,6 +1,6 @@
-package test.java.kyu6.cw28;
+package test.java.kyu6.kata03;
 
-import main.java.kyu6.cw28.DisemvowelTrolls;
+import main.java.kyu6.kata03.DisemvowelTrolls;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
