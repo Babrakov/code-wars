@@ -14,6 +14,7 @@ public class TimeFormatterTest {
         assertEquals("2 minutes", TimeFormatter.formatDuration(120));
         assertEquals("1 hour", TimeFormatter.formatDuration(3600));
         assertEquals("1 hour, 1 minute and 2 seconds", TimeFormatter.formatDuration(3662));
+        assertEquals("now", TimeFormatter.formatDuration(0));
     }
 
 }
