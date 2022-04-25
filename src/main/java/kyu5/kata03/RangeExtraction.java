@@ -1,4 +1,4 @@
-package main.java.kyu5.kata3;
+package main.java.kyu5.kata03;
 
 public class RangeExtraction {
 

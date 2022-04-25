@@ -1,6 +1,6 @@
-package test.java.kyu5.kata3;
+package test.java.kyu5.kata03;
 
-import main.java.kyu5.kata3.RangeExtraction;
+import main.java.kyu5.kata03.RangeExtraction;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
