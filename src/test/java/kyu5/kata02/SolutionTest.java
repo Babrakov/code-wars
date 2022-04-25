@@ -23,4 +23,10 @@ public class SolutionTest {
             assertEquals(msg[n], expected[n], Matrix.determinant(matrix[n]));
     }
 
+    @Test
+    public void squareTest(){
+        int[][] mat = {{1, 3}, {2,5}};
+        assertEquals(-1,Matrix.determinant(mat));
+    }
+
 }

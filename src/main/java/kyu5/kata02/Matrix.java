@@ -35,8 +35,18 @@ det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_mino
 public class Matrix {
 
     public static int determinant(int[][] matrix) {
+        return square(matrix);
         // Your code here!
-        return 0;
+//        return 0;
+    }
+
+    private static int square(int[][] matrix) {
+        int a,b,c,d;
+        a = matrix[0][0];
+        b = matrix[0][1];
+        c = matrix[1][0];
+        d = matrix[1][1];
+        return a*d - b*c;
     }
 
 }
