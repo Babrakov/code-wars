@@ -32,12 +32,45 @@ The determinant of larger matrices are calculated analogously, e.g. if M is a 4x
 det(M) = a * det(a_minor) - b * det(b_minor) + c * det(c_minor) - d * det(d_minor)
  */
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Matrix {
 
+    public static void main(String[] args) {
+        int[][] matrix = {{2,5,3}, {1,-2,-1}, {1, 3, 4}};
+        System.out.println(determinant(matrix));
+    }
+
     public static int determinant(int[][] matrix) {
-        return square(matrix);
-        // Your code here!
-//        return 0;
+        if (matrix.length == 1) return matrix[0][0];
+        if (matrix.length == 2)
+            return square(matrix);
+        else {
+            int result = 0;
+            boolean sign = true;
+            int[][] newMatrix= new int[matrix.length-1][matrix.length-1];
+            for (int k = 0; k < matrix.length; k++) {
+                int a = matrix[0][k];
+                for (int i = 1; i < matrix.length; i++) {
+                    List<Integer> row = new ArrayList<>();
+                    for (int j = 0; j < matrix.length; j++) {
+                        if (j==k) continue;
+                        row.add(matrix[i][j]);
+                    }
+                    newMatrix[i-1] = row.stream().mapToInt(val -> val).toArray();
+                }
+                if (sign) {
+                    result += a * determinant(newMatrix);
+                    sign = false;
+                } else {
+                    result -= a * determinant(newMatrix);
+                    sign = true;
+                }
+            }
+
+            return result;
+        }
     }
 
     private static int square(int[][] matrix) {
@@ -47,6 +80,21 @@ public class Matrix {
         c = matrix[1][0];
         d = matrix[1][1];
         return a*d - b*c;
+    }
+
+    public static int bestDeterminant(int[][] m) {
+        int d = 0, size = m.length;
+        if (size == 1) return m[0][0];
+
+        for (int n = 0 ; n < size ; n++) {
+            int[][] newM = new int[size-1][size-1];
+            for (int x = 1 ; x < size ; x++) for (int y = 0 ; y < size ; y++) {
+                if (y == n) continue;
+                newM[x-1][y + (y>n ? -1 : 0)] = m[x][y];
+            }
+            d += (n%2!=0 ? -1 : 1) * m[0][n] * determinant(newM);
+        }
+        return d;
     }
 
 }
