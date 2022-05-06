@@ -15,47 +15,77 @@ KataSolution.expand("(r+0)^203");    // returns "r^203"
 KataSolution.expand("(-x-1)^2");     // returns "x^2+2x+1"
  */
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 public class BinomialExpansion {
 
     public static void main(String[] args) {
-        System.out.println(expand("(-2a-4)^0"));
+//        System.out.println(expand("(-12t+43)^2"));
+//        System.out.println(expand("(-x-1)^2"));
+//        System.out.println(expand("(2f+4)^6"));
+//        System.out.println(expand("(x+1)^2"));
+//        System.out.println(expand("(9t-0)^2"));
+//        System.out.println(expand("(-n-12)^5"));
+        System.out.println(expand("(y+5)^15"));
     }
 
     public static String expand(String expr) {
+        System.out.println(expr);
+
         final String regex = "\\((\\+|\\-)?(\\d*)(\\S)(\\+|\\-)?(\\d*)\\)\\^(\\d+)";
 
         final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
         final Matcher matcher = pattern.matcher(expr);
 
-        String firstSign,element,secondSign,secondFactor;
-        firstSign=element=secondSign=secondFactor=null;
-        Integer power = 0, firstFactor = 0;
+        String firstSign,element,secondSign;
+        firstSign=element=secondSign=null;
+        Integer power = 0, firstFactor = 0, secondFactor = 0;
 
         while (matcher.find()) {
             firstSign = matcher.group(1);
-            firstFactor = Integer.parseInt(matcher.group(2)+0);
+            if (firstSign==null) firstSign = "+";
+            firstFactor = Integer.parseInt(0+matcher.group(2));
+            if (firstFactor==0) firstFactor=1;
             element = matcher.group(3);
             secondSign = matcher.group(4);
-            secondFactor = matcher.group(5);
+            secondFactor =  Integer.parseInt(0+matcher.group(5));
             power = Integer.parseInt(matcher.group(6));
         }
 
+        if (firstSign.equals("-")) firstFactor *= -1;
+        if (secondSign.equals("-")) secondFactor *= -1;
         if (power == 0) return "1";
 
         if (secondFactor.equals("0")) {
             String begin = "";
             if (firstFactor!=0) {
-                if (firstSign.equals("-")) firstFactor *= -1;
                 begin = String.valueOf((int) Math.pow(firstFactor,power));
             } else {
                 if (firstSign.equals("-") && power%2!=0) begin = "-";
             }
             return begin+element+"^"+power;
         }
-        return "";
+
+        StringBuilder result = new StringBuilder();
+        long c = 0;
+        long nFactorial = factorial(power);
+        for (int i = power; i > 0; i--) {
+            int k = power-i;
+            c = (long) (Math.pow(firstFactor,i) * Math.pow(secondFactor,k) * nFactorial/(factorial(k)*factorial(power-k)));
+            if (i!=power && c>0) result.append("+");
+            if (c!=0 && c!=1 && c!=-1) result.append(c);
+            if (c==-1) result.append("-");
+            if (c!=0) result.append(element);
+            if (i!=1) result.append("^"+i);
+        }
+        c = (long) Math.pow(secondFactor,power);
+        if (c>0) result.append("+");
+        if (c!=0) result.append(c);
+
+        return result.toString();
     }
 
     public static long factorial(int number) {
@@ -66,6 +96,32 @@ public class BinomialExpansion {
         }
 
         return result;
+    }
+
+    public static String bestExpand(String expr) {
+
+        Matcher m = Pattern.compile("(\\-?\\d*)([a-z])([+-])(\\-?\\d+)\\D+(\\d+)").matcher(expr);
+        m.find();
+        int p = Integer.parseInt(m.group(5));
+        String[] str = new String[p + 1];
+        int a = m.group(1).length() == 0 ? 1 : m.group(1).equals("-") ? -1 : Integer.parseInt(m.group(1));
+        int b = (m.group(3).equals("-") ? -1 : 1) * Integer.parseInt(m.group(4));
+        for (int i = 0; i <= p; i++) {
+            long f = (long) (nOverK(p, i) * Math.pow(a, p - i) * (i == 0 ? 1 : Math.pow(b, i)));
+            if (f != 0) {
+                str[i] = p - i == 0 ? f + ""
+                        : (f == 1 ? "" : f == -1 ? "-" : f) + m.group(2) + (p - i != 1 ? "^" + (p - i) : "");
+            }
+        }
+        return Arrays.stream(str).filter(s -> s != null).collect(Collectors.joining("+")).replaceAll("\\+\\-", "\\-");
+    }
+
+    public static int nOverK(int n, int k) {
+        if (n < k)
+            return 0;
+        if (k == 0 || k == n)
+            return 1;
+        return nOverK(n - 1, k - 1) + nOverK(n - 1, k);
     }
 
 }
