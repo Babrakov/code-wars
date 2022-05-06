@@ -1,0 +1,71 @@
+package main.java.kyu5.kata04;
+
+/*
+The purpose of this kata is to write a program that can do some algebra. Write a function expand that takes in an expression with a single, one character variable, and expands it. The expression is in the form (ax+b)^n where a and b are integers which may be positive or negative, x is any single character variable, and n is a natural number. If a = 1, no coefficient will be placed in front of the variable. If a = -1, a "-" will be placed in front of the variable.
+
+The expanded form should be returned as a string in the form ax^b+cx^d+ex^f... where a, c, and e are the coefficients of the term, x is the original one character variable that was passed in the original expression and b, d, and f, are the powers that x is being raised to in each term and are in decreasing order. If the coefficient of a term is zero, the term should not be included. If the coefficient of a term is one, the coefficient should not be included. If the coefficient of a term is -1, only the "-" should be included. If the power of the term is 0, only the coefficient should be included. If the power of the term is 1, the caret and power should be excluded.
+
+Examples:
+KataSolution.expand("(x+1)^2");      // returns "x^2+2x+1"
+KataSolution.expand("(p-1)^3");      // returns "p^3-3p^2+3p-1"
+KataSolution.expand("(2f+4)^6");     // returns "64f^6+768f^5+3840f^4+10240f^3+15360f^2+12288f+4096"
+KataSolution.expand("(-2a-4)^0");    // returns "1"
+KataSolution.expand("(-12t+43)^2");  // returns "144t^2-1032t+1849"
+KataSolution.expand("(r+0)^203");    // returns "r^203"
+KataSolution.expand("(-x-1)^2");     // returns "x^2+2x+1"
+ */
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class BinomialExpansion {
+
+    public static void main(String[] args) {
+        System.out.println(expand("(-2a-4)^0"));
+    }
+
+    public static String expand(String expr) {
+        final String regex = "\\((\\+|\\-)?(\\d*)(\\S)(\\+|\\-)?(\\d*)\\)\\^(\\d+)";
+
+        final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
+        final Matcher matcher = pattern.matcher(expr);
+
+        String firstSign,element,secondSign,secondFactor;
+        firstSign=element=secondSign=secondFactor=null;
+        Integer power = 0, firstFactor = 0;
+
+        while (matcher.find()) {
+            firstSign = matcher.group(1);
+            firstFactor = Integer.parseInt(matcher.group(2)+0);
+            element = matcher.group(3);
+            secondSign = matcher.group(4);
+            secondFactor = matcher.group(5);
+            power = Integer.parseInt(matcher.group(6));
+        }
+
+        if (power == 0) return "1";
+
+        if (secondFactor.equals("0")) {
+            String begin = "";
+            if (firstFactor!=0) {
+                if (firstSign.equals("-")) firstFactor *= -1;
+                begin = String.valueOf((int) Math.pow(firstFactor,power));
+            } else {
+                if (firstSign.equals("-") && power%2!=0) begin = "-";
+            }
+            return begin+element+"^"+power;
+        }
+        return "";
+    }
+
+    public static long factorial(int number) {
+        long result = 1;
+
+        for (int factor = 2; factor <= number; factor++) {
+            result *= factor;
+        }
+
+        return result;
+    }
+
+}
