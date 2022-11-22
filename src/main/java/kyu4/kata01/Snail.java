@@ -1,4 +1,4 @@
-package main.java.kyu04.kata01;
+package main.java.kyu4.kata01;
 
 /*
 Snail Sort

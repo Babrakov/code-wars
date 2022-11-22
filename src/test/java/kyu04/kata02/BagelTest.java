@@ -1,7 +1,7 @@
 package test.java.kyu04.kata02;
 
-import main.java.kyu04.kata02.Bagel;
-import main.java.kyu04.kata02.BagelSolver;
+import main.java.kyu4.kata02.Bagel;
+import main.java.kyu4.kata02.BagelSolver;
 import org.junit.Test;
 
 public class BagelTest {

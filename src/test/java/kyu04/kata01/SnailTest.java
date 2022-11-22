@@ -1,6 +1,6 @@
 package test.java.kyu04.kata01;
 
-import main.java.kyu04.kata01.Snail;
+import main.java.kyu4.kata01.Snail;
 import org.junit.Assert;
 import org.junit.Test;
 import java.util.Arrays;

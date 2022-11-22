@@ -1,4 +1,4 @@
-package main.java.kyu04.kata02;
+package main.java.kyu4.kata02;
 
 /*
 Here's a seemingly simple challenge. We're giving you a class called bagel, exactly as it appears below.
